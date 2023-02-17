@@ -14,7 +14,6 @@ export default function SongActualPage({ song }: ISongParams) {
     if (song === null) {
         return <Error></Error>;
     }
-    const [imageClass, setCurrentImageClass] = useState<string>("blur");
     const [openLink, setOpenLink] = useState<() => void>(() => { });
     const defaultPlatforms = (<div className="links card">
         <Link href={song.spotifyLink ?? "/not-there-yet"}>
@@ -51,11 +50,12 @@ export default function SongActualPage({ song }: ISongParams) {
         <div className={`card artwork`}>
             <Image placeholder="blur" blurDataURL="https://i.scdn.co/image/ab67616d0000b273cad190f1a73c024e5a40dddd" src={
                 song.artworkUrl
-            } alt="https://i.scdn.co/image/ab67616d0000b273cad190f1a73c024e5a40dddd" width="500" height="500" />
+            } alt="https://i.scdn.co/image/ab67616d0000b273cad190f1a73c024e5a40dddd" width="400" height="400" />
         </div>
-        <h1 className="text-5xl text text-center">{song.name}</h1>
-        <h2 className="text-3xl text text-center">{song.artist}</h2>
+        <b>
+            <h1 className="text-4xl text text-center">{song.name}</h1>
+            <h2 className="text-2xl text text-center">{song.artist}</h2>
+        </b>
         {platforms}
-        {/* </div> */}
     </>)
 }

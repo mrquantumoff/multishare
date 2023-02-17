@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .center {
-  @apply flex flex-col items-center justify-center h-screen;
+  @apply flex flex-col items-center justify-center;
 }
 
 html {
@@ -23,7 +23,7 @@ html {
 }
 
 .artwork {
-  @apply p-4 mb-5;
+  @apply p-4 mt-10 mb-5;
 }
 
 .platform {
@@ -35,7 +35,7 @@ html {
 }
 
 .copyright {
-  @apply text-sm mt-2 text-center;
+  @apply text-sm text-center mt-5;
 }
 
 .apple {
