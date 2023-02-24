@@ -20,8 +20,12 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 }
 
 
+export const revalidate = 120;
+
 export default async function SongPage({ params }: any) {
     const song: ISong | null = await getSongApi(params.id);
 
-    return <SongActualPage song={song}></SongActualPage>
+    return <div className="center">
+        <SongActualPage song={song} />
+    </div>
 }

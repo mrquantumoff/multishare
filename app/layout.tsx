@@ -18,9 +18,9 @@ export default function RootLayout({
     <html>
       <head />
       <body className={`${inter.className}`}>
-        <div className="center">
+        <div className="center h-screen">
           {children}
-          <p className="copyright">Powered by MultiShare. Copyright © 2023, <Link href="https://mrquantumoff.dev">Demir Yerli.</Link></p>
+          <p className="copyright text-sm">This webpage is powered by MultiShare. Copyright © 2023, <Link href="https://mrquantumoff.dev">Demir Yerli.</Link></p>
           <AnalyticsWrapper></AnalyticsWrapper>
         </div>
       </body>

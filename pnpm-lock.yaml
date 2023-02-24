@@ -1,8 +1,9 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@next/font': 13.1.6
   '@supabase/supabase-js': ^2.8.0
-  '@types/node': 18.14.1
+  '@types/node': 18.13.0
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
   '@vercel/analytics': ^0.1.10
@@ -19,8 +20,9 @@ specifiers:
   typescript: 4.9.5
 
 dependencies:
+  '@next/font': 13.1.6
   '@supabase/supabase-js': 2.8.0
-  '@types/node': 18.14.1
+  '@types/node': 18.13.0
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
   '@vercel/analytics': 0.1.10_react@18.2.0
@@ -92,6 +94,10 @@ packages:
     resolution: {integrity: sha512-r0i5rcO6SMAZtqiGarUVMr3k256X0R0j6pEkKg4PxqUW+hG0qgMxRVAJsuoRG5OBFkCOlSfWZJ0mP9fQdCcyNg==}
     dependencies:
       glob: 7.1.7
+    dev: false
+
+  /@next/font/13.1.6:
+    resolution: {integrity: sha512-AITjmeb1RgX1HKMCiA39ztx2mxeAyxl4ljv2UoSBUGAbFFMg8MO7YAvjHCgFhD39hL7YTbFjol04e/BPBH5RzQ==}
     dev: false
 
   /@next/swc-android-arm-eabi/13.2.1:
@@ -310,8 +316,8 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: false
 
-  /@types/node/18.14.1:
-    resolution: {integrity: sha512-QH+37Qds3E0eDlReeboBxfHbX9omAcBCXEzswCu6jySP642jiM3cYSIkU/REqwhCUqXdonHFuBfJDiAJxMNhaQ==}
+  /@types/node/18.13.0:
+    resolution: {integrity: sha512-gC3TazRzGoOnoKAhUx+Q0t8S9Tzs74z7m0ipwGpSqQrleP14hKxP4/JUeEQcD3W1/aIpnWl8pHowI7WokuZpXg==}
     dev: false
 
   /@types/phoenix/1.5.4:
