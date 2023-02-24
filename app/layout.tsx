@@ -1,12 +1,14 @@
-"use client";
-
-/* eslint-disable @next/next/no-head-element */
-
-import { Inter } from "@next/font/google";
+import { Inter } from "next/font/google";
+import { Metadata } from "next";
 import Link from "next/link";
 import { AnalyticsWrapper } from "./analytics";
 import "./globals.css";
 const inter = Inter({ subsets: ['latin', "cyrillic", "cyrillic-ext", "latin-ext", "greek", "greek-ext"], weight: "700", })
+export const metadata: Metadata = {
+  title: "MultiShare",
+  description: "MultiShare by Demir Yerli",
+  icons: { icon: "/logo.png" }
+}
 export default function RootLayout({
   children,
 }: {
@@ -14,10 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <head>
-        <title>MultiShare</title>
-        <link rel="icon" type="image/png" href="/logo.png" />
-      </head>
+      <head />
       <body className={`${inter.className}`}>
         <div className="center h-screen">
           {children}
