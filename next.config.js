@@ -2,7 +2,6 @@
 const nextConfig = {
   experimental: {
     appDir: true,
-    fetchCache: true,
   },
   images: {
     domains: ["i.scdn.co"],
