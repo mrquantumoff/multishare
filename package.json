@@ -1,6 +1,6 @@
 {
   "name": "multishare",
-  "version": "0.1.0",
+  "version": "23.5.29",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,15 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.22.0",
-    "@types/node": "18.16.3",
+    "@supabase/supabase-js": "^2.23.0",
+    "@types/node": "20.2.5",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
     "@vercel/analytics": "^1.0.1",
     "dotenv": "^16.0.3",
     "eslint": "8.41.0",
-    "eslint-config-next": "13.4.3",
-    "next": "13.4.3",
+    "eslint-config-next": "13.4.4",
+    "next": "13.4.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sharp": "^0.32.1",
@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.23",
+    "postcss": "^8.4.24",
     "tailwindcss": "^3.3.2"
   },
   "packageManager": "yarn@3.5.1"
