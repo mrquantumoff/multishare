@@ -27,7 +27,7 @@ html {
 }
 
 .spotify {
-  @apply hover:border-green-400 hover:bg-green-400 hover:text-green-200;
+  @apply border-green-400 hover:bg-green-400 hover:text-green-200;
 }
 
 .copyright {
@@ -35,11 +35,11 @@ html {
 }
 
 .apple {
-  @apply hover:border-rose-400 hover:bg-rose-400 hover:text-rose-200;
+  @apply border-rose-400 hover:bg-rose-400 hover:text-rose-200;
 }
 
 .yt {
-  @apply hover:border-red-600 hover:bg-red-600 hover:text-red-400;
+  @apply border-red-600 hover:bg-red-600 hover:text-red-400;
 }
 
 .links {
