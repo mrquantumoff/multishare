@@ -15,7 +15,7 @@ export default function SongActualPage({ song }: ISongParams) {
         return <Error></Error>;
     }
     const [openLink, setOpenLink] = useState<() => void>(() => { });
-    const defaultPlatforms = (<div className="links card">
+    const defaultPlatforms = (<div className="links py-8 px-16 card center">
         <Link href={song.spotifyLink ?? "/not-there-yet"}>
             <button onClick={openLink} className="card platform spotify">Spotify</button>
         </Link>
@@ -47,15 +47,15 @@ export default function SongActualPage({ song }: ISongParams) {
 
     return (<>
         {/* <div className="center"> */}
-        <div className={`card artwork`}>
+        <div className={`card artwork center`}>
             <Image placeholder="blur" blurDataURL="https://i.scdn.co/image/ab67616d0000b273cad190f1a73c024e5a40dddd" src={
                 song.artworkUrl
             } alt="https://i.scdn.co/image/ab67616d0000b273cad190f1a73c024e5a40dddd" width="400" height="400" />
         </div>
-        <b>
-            <h1 className="text-4xl text text-center">{song.name}</h1>
-            <h2 className="text-2xl text text-center">{song.artist}</h2>
-        </b>
+        <div className="card p-4 my-4 title center">
+            <h1 className="text-4xl text center text-center">{song.name}</h1>
+            <h2 className="text-2xl text center text-center">{song.artist}</h2>
+        </div>
         {platforms}
     </>)
 }

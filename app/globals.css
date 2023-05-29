@@ -3,35 +3,31 @@
 @tailwind utilities;
 
 .center {
-  @apply flex flex-col items-center justify-center;
+  @apply grid justify-center place-items-center;
 }
 
 html {
-  @apply transition-all ease-linear duration-300 bg-gray-900 text-white;
-}
-
-.text {
-  @apply transition-all ease-in-out duration-500 shadow-none hover:shadow-inner px-5 py-2 rounded-2xl;
-}
-
-.card:hover {
-  @apply shadow-lg shadow-sky-700;
+  @apply transition-all ease-linear duration-300 bg-slate-900 text-white;
 }
 
 .card {
-  @apply m-2 bg-slate-800 shadow-md transition-all px-2 py-4 rounded-2xl ease-linear duration-200;
+  max-width: max-content;
+  overflow: auto;
+  @apply transition-all ease-linear duration-300 border-2 rounded-3xl border-slate-800;
 }
-
 .artwork {
   @apply p-4 mt-10 mb-5;
 }
+.artwork img {
+  @apply rounded-3xl;
+}
 
 .platform {
-  @apply p-4;
+  @apply p-4 mx-2;
 }
 
 .spotify {
-  @apply hover:shadow-green-400;
+  @apply hover:border-green-400 hover:bg-green-400 hover:text-green-200;
 }
 
 .copyright {
@@ -39,13 +35,16 @@ html {
 }
 
 .apple {
-  @apply hover:shadow-rose-400;
+  @apply hover:border-rose-400 hover:bg-rose-400 hover:text-rose-200;
 }
 
 .yt {
-  @apply hover:shadow-red-600;
+  @apply hover:border-red-600 hover:bg-red-600 hover:text-red-400;
 }
 
+.links {
+  @apply flex;
+}
 @media all and (max-width: 720px) {
   .platform {
     @apply text-base p-2 mx-1.5;
@@ -59,7 +58,8 @@ html {
   .platform {
     @apply text-sm p-2 py-2 mx-1;
   }
-  .links {
+  .links,
+  .title {
     @apply py-2 px-10;
   }
 }
@@ -68,7 +68,8 @@ html {
   .platform {
     @apply text-sm p-1.5 mx-1;
   }
-  .links {
+  .links,
+  .title {
     @apply py-3 px-10;
   }
 }

@@ -25,7 +25,7 @@ export default async function handler(
 
     try {
         const returnValue: ISong | null = await getSong(songId)!;
-        if (returnValue!=null) {
+        if (returnValue!==null) {
           return res.status(200).json(returnValue);
         }
         else {
